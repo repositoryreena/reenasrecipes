@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Other People's Food – Reena's Recipes</title>
+  <style>
+    :root {
+      --red: #d41c1c;
+      --yellow: #fcd116;
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--white);
+      color: #222;
+    }
+
+    header {
+      background-color: var(--red);
+      color: var(--white);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    .back-button {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: var(--red);
+      color: white;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #a41313;
+    }
+
+    .recipe-container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .recipe-card {
+      background-color: var(--yellow);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .recipe-card img {
+  width: 100%;  /* Makes the image fill the full width of the container */
+  height: 250px;  /* Fixed height for uniform size */
+  object-fit: contain;  /* Ensures the image fits within the box without stretching */
+  object-position: center;  /* Keeps the image centered in the container */
+}
+
+    .recipe-content {
+      padding: 1rem;
+    }
+
+    .recipe-name {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 0 0 0.5rem;
+    }
+
+    .recipe-story {
+      font-size: 1rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Other People's Food</h1>
+    <p>These are dishes made by friends, family, and other culinary artists that have left an impression on me.</p>
+    <a href="javascript:history.back()" class="back-button">
+      Go Back
+    </a>
+  </header>
+
+  <div class="recipe-container">
+    <!-- Dish 1 -->
+    <div class="recipe-grid">
+      <div class="recipe-card">
+        <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/491015688_1036846534973327_4204695614188386846_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=KSkaxa4VojsQ7kNvwHgsAE9&_nc_oc=Adlm4OQJSA6cHsW3OtiRvtFt5XaJ9rtXKGtSHOBo_Bd3tJWudjyXc3JF-NQpjg0E8vR8ibyoRKfFVgnfSQSQNy0c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AERu7OzI7Tu2xhpsloMpm0PMZbSGgS9VWR9G0nARFIzmA&oe=682A0236" alt="Cousin's Cake">
+        <div class="recipe-content">
+          <h2 class="recipe-name">Cousin's Cake</h2>
+          <p class="recipe-story">
+            For my uncle's birthday, my cousin went all out with a homemade cake that was both beautiful and absolutely delicious. She had put so much thought into every detail of the cake, from the rich layers of moist sponge to the smooth, creamy frosting that perfectly coated every inch.
+            <br><br>
+            But the real magic was in the drizzling sauce she poured over the top. It had a sweet and tangy flavor that added the perfect contrast to the sweetness of the cake. The drizzle was silky, with just the right balance of flavor—it made the whole cake come alive with every bite. We couldn’t stop talking about it. There was something so comforting about the combination of the cake and that special drizzle—it’s a birthday memory I won’t forget!
+          </p>
+        </div>
+      </div>
+
+      <!-- Dish 2 -->
+      
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amma's Cooking – Reena's Recipes</title>
+  <style>
+    :root {
+      --red: #d41c1c;
+      --yellow: #fcd116;
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--white);
+      color: #222;
+    }
+
+    header {
+      background-color: var(--red);
+      color: var(--white);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    .back-button {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: var(--red);
+      color: white;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #a41313;
+    }
+
+    .recipe-container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .recipe-card {
+      background-color: var(--yellow);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .recipe-content {
+      padding: 1rem;
+    }
+
+    .recipe-name {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 0 0 0.5rem;
+    }
+
+    .recipe-story {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .recipe-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 8px 16px;
+      background-color: var(--red);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      transition: background-color 0.3s;
+    }
+
+    .recipe-link:hover {
+      background-color: #a41313;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Amma's Cooking</h1>
+    <p>These are the dishes I hold dear, made by Amma with love and the finest ingredients.</p>
+    <a href="javascript:history.back()" class="back-button">
+      Go Back
+    </a>
+  </header>
+
+  <div class="recipe-container">
+    <!-- Recipe 1 -->
+    <div class="recipe-grid">
+      <div class="recipe-card">
+        <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/491190138_584532823936885_5491049970934818081_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=YD6trIiG7ZEQ7kNvwHWXtp3&_nc_oc=AdlhBm7KHHAKQPWlhO2wp_afh2bQgnhNpdzEXy22pNRAYMZ05k6-28STkbblN7S62DxyFy2Zs5ESlOXk5vVl-ApM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AG1TBcjgor78BIyHuyQf7lAlU5woT33x3ARFqXDBTy9uA&oe=6829F769" alt="Neapolitan Cake Pops">
+        <div class="recipe-content">
+          <h2 class="recipe-name">Neapolitan Cake Pops</h2>
+          <p class="recipe-story">
+            Amma’s Neapolitan Cake Pops are a true labor of love. She took the Neapolitan layered cake I made, which was already decadent and dreamy with layers of chocolate, vanilla, and strawberry, and turned it into something even more magical.  
+            <br><br>
+            She carefully crumbled the cake, mixed it with frosting, and rolled it into little cake balls. After dipping them in chocolate, vanilla, and strawberry coatings, she created these adorable, bite-sized treats. They were like little bites of joy, each pop a perfect blend of creamy, sweet, and nostalgic flavors.  
+            <br><br>
+            Every time I see a cake pop now, I remember Amma’s creativity in transforming what was just a regular cake into something even more special. It was like she added her own sprinkle of love to each one.  
+          </p>
+          <a href="paneer-butter-masala-recipe.html" class="recipe-link">View Recipe</a>
+        </div>
+      </div>
+
+      <!-- Recipe 2 -->
+      <div class="recipe-card">
+        <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/489849789_1720911241795152_8481425295962702205_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=MYNI35fyPF4Q7kNvwFldQmE&_nc_oc=AdnXBB7NpLb56SlX2FRJ0AvScJAD9b6w_QSDIYxDZOERwMnN44h94slb4MwkB93dDqkQi6UENDj6nWolGk5-CzjW&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AGbyypA_GvJA0Me7ZiRCaMvYNcJ6yNBhyjsY6VDWiA7qA&oe=6829FC2A" alt="Burmese Tea Leaf Salad">
+        <div class="recipe-content">
+          <h2 class="recipe-name">Burmese Tea Leaf Salad</h2>
+          <p class="recipe-story">
+            Amma’s Burmese Tea Leaf Salad is one of those dishes that’s as unforgettable as it is unique. I remember the first time she made it—my curiosity was piqued by the tangy, earthy smell of the fermented tea leaves she carefully mixed into the salad.  
+            <br><br>
+            The salad itself is a beautiful medley of textures and flavors: crunchy peanuts, toasted sesame seeds, and dried shrimp all come together with the bold, fermented tea leaves that bring an unexpected depth of flavor. It’s one of those dishes where every bite feels like a new discovery—each ingredient adding its own little surprise to the mix.  
+            <br><br>
+            Amma’s version is always the best, though. She has this way of balancing all the ingredients so that no one flavor overpowers the rest. It’s savory, tangy, and a little bit spicy—absolutely perfect for when you want to try something different, but comforting at the same time. It’s a dish that brings us all together, sharing bites and stories at the table.
+          </p>
+          <a href="vegetable-biryani-recipe.html" class="recipe-link">View Recipe</a>
+        </div>
+      </div>
+
+      <!-- Recipe 3 -->
+      <div class="recipe-card">
+        <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/491001346_1388835245468538_8909206279269821585_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=7c8mVqrhMOQQ7kNvwE7RlAQ&_nc_oc=Adlm3xHui2d2OCyO0_SNP_zQpGPxlYi91NfaKfbJoSy_4UXkmdRagKSCx05fCbDWcS83NZcDom-62I1t5iwEqKcj&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AH7OmCwuh23l0mq29TMEpfvcN7-Y5LIESs36oF7_hEofQ&oe=682A02DD" alt="Nanaimo Bars">
+        <div class="recipe-content">
+          <h2 class="recipe-name">Nanaimo Bars</h2>
+          <p class="recipe-story">
+            My mother’s Nanaimo bars are a special treat she makes just for my brother, who’s always had a love for all things Canada. Every time she makes them, it’s a little reminder of how much she knows him and his quirky love for Canadian culture. These no-bake, layered bars are a perfect balance of sweetness and crunch, with a decadent chocolatey top layer, a rich custard filling, and a crunchy coconut base. My brother absolutely loves them, and it’s always a big hit whenever we have them around. They’ve become a fun tradition in our house—whenever my brother’s craving something sweet, you can bet my mom will be in the kitchen making Nanaimo bars!
+          </p>
+          
+          <a href="masoor-dal-recipe.html" class="recipe-link">View Recipe</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

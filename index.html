@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reena's Recipes</title>
+  <style>
+    :root {
+      --red: #d41c1c;
+      --yellow: #fcd116;
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--white);
+      color: #222;
+    }
+
+    header {
+      background-color: var(--red);
+      color: var(--white);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .grid-item {
+      background-color: var(--yellow);
+      border-radius: 16px;
+      overflow: hidden;
+      text-align: center;
+      text-decoration: none;
+      color: #000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .grid-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    }
+
+    .grid-item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .grid-item p {
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    @media (max-width: 500px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .grid-item img {
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Reena's Recipes</h1>
+    <p>Big flavor. Bright vibes. Cook what you love.</p>
+  </header>
+
+
+  
+
+  <main class="grid">
+    <a href="#cooking-for-myself.html" class="grid-item">
+      <img src="images/cooking.jpg" alt="Cooking for Myself">
+      <p>Cooking for Myself</p>
+    </a>
+
+    <a href="#cooking-for-others.html" class="grid-item">
+      <img src="images/cuisine1.jpg" alt="Cooking for Others">
+      <p>Cooking for Others</p>
+    </a>
+
+
+    <a href="restaurants.html" class="grid-item">
+      <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/451455919_510155841571731_5713278564125447926_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=-WGUkeNtnU4Q7kNvwHbER2P&_nc_oc=AdkB3udBACqWXPveZDwyO4nhpX55C7G_b0S4zaAmiHjenm0r4UBRTGQ6F_Kvbo8Z0M1DOmzVGJg-PS5Px4pV0rPD&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AGzsBp__kdTM_9nad915J82AgqAJiMChyAhAUxnwpYmqw&oe=6829FAC7" alt="Restaurants">
+      <p>Restaurants</p>
+    </a>
+
+    <a href="ammas-cooking.html" class="grid-item">
+      <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/491190138_584532823936885_5491049970934818081_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=YD6trIiG7ZEQ7kNvwHWXtp3&_nc_oc=AdlhBm7KHHAKQPWlhO2wp_afh2bQgnhNpdzEXy22pNRAYMZ05k6-28STkbblN7S62DxyFy2Zs5ESlOXk5vVl-ApM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AG1TBcjgor78BIyHuyQf7lAlU5woT33x3ARFqXDBTy9uA&oe=6829F769" alt="Amma's Cooking">
+      <p>Amma's Cooking</p>
+    </a>
+
+    <a href="others-food.html" class="grid-item">
+      <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/491015688_1036846534973327_4204695614188386846_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=KSkaxa4VojsQ7kNvwHgsAE9&_nc_oc=Adlm4OQJSA6cHsW3OtiRvtFt5XaJ9rtXKGtSHOBo_Bd3tJWudjyXc3JF-NQpjg0E8vR8ibyoRKfFVgnfSQSQNy0c&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AERu7OzI7Tu2xhpsloMpm0PMZbSGgS9VWR9G0nARFIzmA&oe=682A0236" alt="Other People's Food">
+      <p>Other People's Food</p>
+    </a>
+
+    <a href="easter.html" class="grid-item">
+      <img src="images/easter.jpg" alt="Easter">
+      <p>Easter</p>
+    </a>
+
+    <a href="thanksgiving.html" class="grid-item">
+      <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/491004852_692373853445399_5243899611837937262_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=NA3kjjjcIqAQ7kNvwEN9Y-T&_nc_oc=AdkBwP63RhtP6vMLhP5gkeHU8CxDy7HzJxqVCn0fqodm_YFZGU9KfshJo6TueoPjhq0KVgTrLRPNhCrxvhJ-vYIi&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AHr_3adfxldeSpmNJjxSeprMvMrt1VdpQSCUTqpFo-fsQ&oe=6829E619" alt="Thanksgiving">
+      <p>Thanksgiving</p>
+    </a>
+
+    <a href="christmas.html" class="grid-item">
+      <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/490999248_1013364783652257_3877956861138946918_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=X41mUkMEN4AQ7kNvwHM36QR&_nc_oc=AdkcsaNQYLlgLaj0RDM0LjBfsFG9LKRMYKy-ySFz3t4vIqAc-afcSKgMotE-0Wz183dNNeWGo7RyfI7LBeYTQAZJ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AFrL7LavLe9LvwLfxWAk8WQ_8Bv2EgQcSeFCUFKjfPanw&oe=682A002A" alt="Christmas">
+      <p>Christmas</p>
+    </a>
+
+    
+
+    <a href="#kitchen-gadgets.html" class="grid-item">
+      <img src="images/gadgets.jpg" alt="Kitchen Gadgets">
+      <p>Kitchen Gadgets</p>
+    </a>
+  </main>
+
+</body>
+</html>

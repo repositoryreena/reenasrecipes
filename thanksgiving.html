@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thanksgiving – Reena's Recipes</title>
+  <style>
+    :root {
+      --red: #d41c1c;
+      --yellow: #fcd116;
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--white);
+      color: #222;
+    }
+
+    header {
+      background-color: var(--red);
+      color: var(--white);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    .back-button {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: var(--red);
+      color: white;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #a41313;
+    }
+
+    .recipe-container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .recipe-card {
+      background-color: var(--yellow);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .recipe-card img {
+  width: 100%;  /* Makes the image fill the full width of the container */
+  height: 250px;  /* Fixed height for uniform size */
+  object-fit: contain;  /* Ensures the image fits within the box without stretching */
+  object-position: center;  /* Keeps the image centered in the container */
+}
+
+
+
+
+    .recipe-content {
+      padding: 1rem;
+    }
+
+    .recipe-name {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 0 0 0.5rem;
+    }
+
+    .recipe-story {
+      font-size: 1rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Thanksgiving Recipes</h1>
+    <p>Celebrating Thanksgiving with food that brings warmth, tradition, and togetherness.</p>
+    <a href="javascript:history.back()" class="back-button">
+      Go Back
+    </a>
+  </header>
+
+  <div class="recipe-container">
+    <!-- Dish 1 -->
+    <div class="recipe-grid">
+      <div class="recipe-card">
+        <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/491004852_692373853445399_5243899611837937262_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_ohc=NA3kjjjcIqAQ7kNvwEN9Y-T&_nc_oc=AdkBwP63RhtP6vMLhP5gkeHU8CxDy7HzJxqVCn0fqodm_YFZGU9KfshJo6TueoPjhq0KVgTrLRPNhCrxvhJ-vYIi&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AHr_3adfxldeSpmNJjxSeprMvMrt1VdpQSCUTqpFo-fsQ&oe=6829E619" alt="Baked Mac and Cheese">
+        <div class="recipe-content">
+          <h2 class="recipe-name">Baked Mac and Cheese</h2>
+          <p class="recipe-story">
+            My baked mac and cheese was a total hit this year, and I know it’s going to become a holiday staple from now on. The creamy cheese sauce, perfectly baked until golden and bubbly, had everyone coming back for seconds (and thirds!). I used a combination of sharp cheddar and creamy mozzarella to give it the perfect balance of flavor and richness. The crispy breadcrumb topping added that irresistible crunch, making every bite absolutely delicious. It’s officially on the menu every year—no holiday is complete without it!
+          </p>
+          
+          <a href="https://youtu.be/-dZCk-su_X4?feature=shared" target="_blank" class="recipe-link">View Recipe</a>
+        </div>
+      </div>
+
+      
+    </div>
+  </div>
+
+</body>
+</html>

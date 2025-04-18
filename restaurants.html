@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Restaurants I Love – Reena's Recipes</title>
+  <style>
+    :root {
+      --red: #d41c1c;
+      --yellow: #fcd116;
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--white);
+      color: #222;
+    }
+
+    header {
+      background-color: var(--red);
+      color: var(--white);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    .restaurant-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .restaurant-card {
+      background-color: var(--yellow);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .restaurant-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .restaurant-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .restaurant-content {
+      padding: 1rem;
+    }
+
+    .restaurant-name {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 0 0 0.5rem;
+    }
+
+    .restaurant-story {
+      font-size: 1rem;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Restaurants I Love</h1>
+    <p>These spots fed my soul (and stomach). Here’s where to eat, and why I love them.</p>
+    <a href="javascript:history.back()" style="text-decoration: none; display: inline-block; padding: 10px 20px; background-color: #d41c1c; color: white; font-size: 1.1rem; border-radius: 5px; text-align: center; transition: background-color 0.3s;">
+        Go Back
+      </a>
+      
+  </header>
+
+  
+  
+
+  <main class="restaurant-grid">
+
+    <!-- Restaurant 1 -->
+    <div class="restaurant-card">
+      <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/451455919_510155841571731_5713278564125447926_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=-WGUkeNtnU4Q7kNvwHbER2P&_nc_oc=AdkB3udBACqWXPveZDwyO4nhpX55C7G_b0S4zaAmiHjenm0r4UBRTGQ6F_Kvbo8Z0M1DOmzVGJg-PS5Px4pV0rPD&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AGzsBp__kdTM_9nad915J82AgqAJiMChyAhAUxnwpYmqw&oe=6829FAC7" alt="Eataly">
+      <div class="restaurant-content">
+        <h2 class="restaurant-name">Eataly - San Jose</h2>
+        <p class="restaurant-story">
+            Eataly is like a giant Italian playground—cheese counters, pasta stations, wine bars, and more. I wandered around wide-eyed for way too long before finally settling down for a burrata pizza.  
+            <br><br>
+            Let me just say… that burrata was living its best life. Creamy, cool, and sitting proudly on top of a hot, bubbly crust with just the right amount of char. Every bite was basically a hug from an Italian grandmother I’ve never met. It was the kind of pizza that makes you sit back, close your eyes, and just *feel* something.
+          </p>
+      </div>
+    </div>
+
+    <!-- Restaurant 2 -->
+    <div class="restaurant-card">
+      <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/476499526_542648638844826_1168426812154840735_n.png?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=1TZ8sBqMC_AQ7kNvwFj_vWE&_nc_oc=AdnJIBS1Xx8eYxxO_p4UgBdHL3ofG3K3Im3Dx_FnMakUg6Lj-eUZwPVFChBeII9PgNfIOOs2KpEeBf8rRgpXFOI-&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AGwhZ-vvEepaR-jiTDjm_4G-lvZZefwdXXpRjdJqBpbIw&oe=6829E965" alt="Unknown">
+      <div class="restaurant-content">
+        <h2 class="restaurant-name">Unknown</h2>
+        <p class="restaurant-story">
+            My dad got me breakfast and told me I could order anything I wanted, so I decided to go all out. I ordered the large breakfast from Pulp Fiction, complete with buttermilk pancakes and a slice of blueberry pie.
+        </p>
+      </div>
+    </div>
+
+    <!-- Restaurant 3 -->
+    <div class="restaurant-card">
+      <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/491004801_1226765032364250_16158836286619319_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=zxaiPBhCQQcQ7kNvwEQKYRA&_nc_oc=Adn3kEjvRrUgaeEpZ-85SVutlO7GcWfcszOhhOWcfVtX5CxE8PsOZ2xQ64g1_e-55EjN994UX-1NfgC90JgLj1wb&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AGmdrg0VIb_w16BmQBsT6iiFR0GFpqkpwdmA8mSGt0xjA&oe=6829F36C" alt="La Trattoria">
+      <div class="restaurant-content">
+        <h2 class="restaurant-name">Rangoli – San Jose</h2>
+        <p class="restaurant-story">
+            My aunt took me to Rangoli one afternoon, and it felt like a mini feast. We ordered garlic naan, stuffed naan, paneer, and a veggie dish to share—and honestly, everything hit.  
+            <br><br>
+            But the **stuffed naan**? That was the star. Fluffy, warm, buttery, and packed with spiced goodness inside—it was the kind of bread that makes you forget about everything else on the table. I ate *most* of it on my own (hey, no shame in my naan game), and it was absolutely worth every bite.  
+            <br><br>
+            The whole meal felt like comfort food with a little flair. Definitely one of those places I’d go back to when I want to feel full, happy, and naan-satisfied.
+          </p>
+      </div>
+    </div>
+
+    <!-- Add more restaurants below as needed -->
+    <div class="restaurant-card">
+      <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/491184721_1695816887738709_960382404436747295_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=MzRhu5ZBTcEQ7kNvwHOCnW6&_nc_oc=Adn7iYGQHmcrslWekKLypIlK7n7zfR2bKB1ncAyFL3Vm0qkUIwtEjLW9Ivl-N0GdsSTc1KWtgjiBFsDEs7XSBihg&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AFw1l8CDKgUBVW5kc2YR33df5c_Wev8-v1mBKs8IoWvUQ&oe=682A0F2B" alt="Merit Vegetarian Restaurant">
+      <div class="restaurant-content">
+        <h2 class="restaurant-name">Merit Vegetarian Restaurant</h2>
+        <p class="restaurant-story">
+            Merit Vegetarian is a little gem I found near my singing lesson spot, and it ended up being the perfect place for my 30th birthday dinner. My parents took me there to celebrate, and the food was so good, I’ve decided to make it a birthday tradition from now on. Since I’m vegetarian, it felt really special to have so many delicious East Asian options that fit my lifestyle without compromise. I ordered the vegan fish and chips, vegan orange chicken, and even treated myself to a root beer float. Everything was flavorful, comforting, and just the right amount of fun—it felt like such a treat. Can’t wait to go back next year!
+          </p>
+          
+      </div>
+    </div>
+
+    <div class="restaurant-card">
+        <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/486223116_560095697123969_2203763806245614829_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=CCZIohXfxE8Q7kNvwGKvdcy&_nc_oc=Adl1OpI98dNld4kOKOYEb-Om1eKy2tJ-pyflotQjc1o7xQot3sUMw82F65Cc3mvMd2RLJYnWjIOp5TYusk9-0BBe&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AGRc-rLzSjGCRAC0NKwSA5wyEuz_EAwxa9eSp3Vj6RRUA&oe=682A1631" alt="Tarah Thai">
+        <div class="restaurant-content">
+          <h2 class="restaurant-name">Tarah Thai</h2>
+          <p class="restaurant-story">
+            We ordered food from Tarah Thai to celebrate my cousin’s 30th birthday, and it was the perfect choice for the occasion. Everything was super flavorful and satisfying—classic Thai comfort food done right. It made the celebration feel extra cozy and delicious, with all the vibrant flavors we love. Sharing takeout around the table, chatting, and celebrating another milestone made it such a fun and memorable night.
+          </p>
+          
+            
+        </div>
+      </div>
+
+      <div class="restaurant-card">
+        <img src="https://scontent-sjc3-1.xx.fbcdn.net/v/t1.15752-9/490996921_1040138221372397_7896444694881484984_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=plhIsLqwNUQQ7kNvwFW9TuX&_nc_oc=Adk254LTpFASDuJt2Ji2dZUOkIQ1SwX2itI_8PyfTP8p1GQfmaJOYkQOebNY3WKP5w0-p4x7YPXWC7F7eVMqMSMr&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-sjc3-1.xx&oh=03_Q7cD2AE0MsF4xZ1QJmIY67vLvcVzAMejoellvOFbrWD_Jz8QHQ&oe=6829FDD4" alt="Aqui">
+        <div class="restaurant-content">
+          <h2 class="restaurant-name">Aqui</h2>
+          <p class="recipe-story">
+            My aunt took me to Aqui and treated me to two delicious things, but the real standout was the goat cheese quesadilla with aioli sauce—it was amazing. The creamy goat cheese paired perfectly with the crispy tortilla, and that aioli sauce brought everything together in the best way. It was such a thoughtful outing, and the food totally hit the spot. I’ll definitely be going back for that quesadilla again.
+          </p>
+          
+          
+            
+        </div>
+      </div>
+
+  </main>
+
+</body>
+</html>
