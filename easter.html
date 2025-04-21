@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Easter – Reena's Recipes</title>
+  <style>
+    :root {
+      --red: #d41c1c;
+      --yellow: #fcd116;
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--white);
+      color: #222;
+    }
+
+    header {
+      background-color: var(--red);
+      color: var(--white);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    .back-button {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: var(--red);
+      color: white;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      text-align: center;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #a41313;
+    }
+
+    .recipe-container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .recipe-card {
+      background-color: var(--yellow);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+      object-position: center;
+      background-color: transparent;
+    }
+
+    .recipe-content {
+      padding: 1rem;
+    }
+
+    .recipe-name {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 0 0 0.5rem;
+    }
+
+    .recipe-story {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .recipe-link {
+      display: inline-block;
+      margin-top: 0.5rem;
+      color: var(--red);
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Easter Recipes</h1>
+    <p>Egg hunts, spring flavors, and golden treats that make this season special.</p>
+    <a href="./index.html" class="back-button">Go Back</a>
+  </header>
+
+  <div class="recipe-container">
+    <div class="recipe-grid">
+
+      <!-- Dish 1 -->
+      <div class="recipe-card">
+        <img src="https://media.discordapp.net/attachments/972208496365928548/1363557133622186175/image.jpg?ex=6806770a&is=6805258a&hm=16102a4a86488c97cded80063c3da2084b576e708443c25702cb2ed7f9d93fa1&=&format=webp&width=661&height=881" alt="Deviled Eggs">
+        <div class="recipe-content">
+          <h2 class="recipe-name">Deviled Eggs</h2>
+          <p class="recipe-story">
+            I made deviled eggs for the Easter party, and honestly... I’m still not sure how they turned out. People *looked* at them, a few even took some, but there wasn’t a lot of feedback. By the end of the night, they’d been sitting out a little too long and definitely crossed into questionable territory. Lesson learned: either chill them properly or make something less perishable next time!
+          </p>
+          
+        </div>
+      </div>
+
+      <!-- Add more recipes if you want -->
+
+    </div>
+  </div>
+
+</body>
+</html>
