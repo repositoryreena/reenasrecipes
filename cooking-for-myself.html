@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cooking for Myself – Reena's Recipes</title>
+  <style>
+    :root {
+      --red: #d41c1c;
+      --yellow: #fcd116;
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--white);
+      color: #222;
+    }
+
+    header {
+      background-color: var(--red);
+      color: var(--white);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    .back-button {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: var(--red);
+      color: white;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      text-align: center;
+      transition: background-color 0.3s;
+      margin-top: 1rem;
+    }
+
+    .back-button:hover {
+      background-color: #a41313;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin-top: 3rem;
+      text-align: center;
+      color: var(--red);
+    }
+
+    .recipe-container {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .recipe-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .recipe-card {
+      background-color: var(--yellow);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .recipe-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .recipe-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .recipe-content {
+      padding: 1rem;
+    }
+
+    .recipe-name {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin: 0 0 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cooking for Myself</h1>
+    <p>Some meals are routines. Some are rituals. Some are just beautiful little moments in the kitchen.</p>
+    <a href="./index.html" class="back-button">Go Back</a>
+  </header>
+
+  <div class="recipe-container">
+
+    <!-- Weekly Rituals Section -->
+    <h2 class="section-title">Weekly Rituals</h2>
+    <div class="recipe-grid">
+      <a href="#milkshake-monday.html" class="recipe-card">
+        <img src="milkshake.jpg" alt="Milkshake Monday">
+        <div class="recipe-content">
+          <h2 class="recipe-name">Milkshake Monday</h2>
+        </div>
+      </a>
+
+      <a href="#float-friday.html" class="recipe-card">
+        <img src="float.jpg" alt="Float Friday">
+        <div class="recipe-content">
+          <h2 class="recipe-name">Float Friday</h2>
+        </div>
+      </a>
+
+      <a href="#sundae-sunday.html" class="recipe-card">
+        <img src="sundae.jpg" alt="Sundae Sunday">
+        <div class="recipe-content">
+          <h2 class="recipe-name">Sundae Sunday</h2>
+        </div>
+      </a>
+
+      <a href="#sunday-dinner.html" class="recipe-card">
+        <img src="dinner.jpg" alt="Sunday Dinner">
+        <div class="recipe-content">
+          <h2 class="recipe-name">Sunday Dinner</h2>
+        </div>
+      </a>
+    </div>
+
+    <!-- Daily Rituals Section -->
+    <h2 class="section-title">Daily Rituals</h2>
+    <div class="recipe-grid">
+      <!-- Add daily rituals here when you're ready -->
+    </div>
+
+    <!-- Just Because Section -->
+    <h2 class="section-title">Just Because</h2>
+    <div class="recipe-grid">
+      <!-- Add spontaneous meals here when you like -->
+    </div>
+
+  </div>
+
+</body>
+</html>
