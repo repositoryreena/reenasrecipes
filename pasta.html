@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pasta Recipes – Cooking for Myself</title>
+  <style>
+    :root {
+      --red: #d41c1c;
+      --yellow: #fcd116;
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--white);
+      color: #222;
+    }
+
+    header {
+      background-color: var(--red);
+      color: var(--white);
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    .back-button {
+      text-decoration: none;
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: var(--red);
+      color: white;
+      font-size: 1.1rem;
+      border-radius: 5px;
+      text-align: center;
+      transition: background-color 0.3s;
+      margin-top: 1rem;
+    }
+
+    .back-button:hover {
+      background-color: #a41313;
+    }
+
+    .recipe-container {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .recipe-card {
+      background-color: var(--yellow);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+
+    .recipe-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  object-position: center;
+}
+
+
+    .recipe-content {
+      padding: 1rem;
+    }
+
+    .recipe-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin: 0 0 0.5rem;
+      color: var(--red);
+    }
+
+    .recipe-description {
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pasta Recipes</h1>
+    <p>Delicious pasta dishes to brighten your day.</p>
+    <a href="index.html" class="back-button">Go Back</a>
+  </header>
+
+  <div class="recipe-container">
+    <div class="recipe-card">
+      <img src="bow.jpg" alt="Bowtie Pasta with Vodka Sauce">
+      <div class="recipe-content">
+        <h2 class="recipe-name">Bowtie Pasta with Vodka Sauce</h2>
+        <p class="recipe-description">
+          Creamy vodka sauce tossed with perfectly cooked bowtie pasta. A classic Italian-American favorite with a rich, silky tomato-cream flavor.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
